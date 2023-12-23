@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+.container {
+    margin: auto;
+    max-width: 1600px;
+    width: 100%;
+    /* background-color: brown; */
+}
+
+.ringo-logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo_img {
+    width: 122px;
+    height: 53;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 200px;
+    margin-right: 143px;
+}
+
+nav {
+    width: 500px;
+    display: flex;
+    margin-top: 39px;
+    margin-bottom: 38px;
+    margin-right: 106px;
+    flex-wrap: wrap;
+}
+
+nav a {
+
+    text-decoration: none;
+    margin-right: 40px;
+    color: #282B22;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    flex-wrap: wrap;
+}
+
+input[type = 'checkbox'] {
+    display: none;
+}
+
+.menu {
+    display: none;
+    margin-right: 30px;
+}
+
+.header_icon {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 63px;
+}
+
+.header_number {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.header_number a {
+    width: 161px;
+    text-decoration: none;
+    margin-right: 200px;
+    color: #3D4A39;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+
+
+@media screen and (max-width:1600px) {
+    html {
+        font-size: 12px;
+    }
+
+    .container {
+        max-width: 900px;
+    }
+    nav {
+        width: 500px;
+    }
+    
+    .logo_img {
+        margin-left: 20px;
+        margin-right: 105px;
+    }
+
+    .hero-container img {
+        max-width: 900px;
+    }
+} 
+
+@media screen and (max-width:992px) {
+    html {
+        font-size: 12px;
+    }
+
+    .container {
+        max-width: 750px;
+    }
+
+    .logo_img {
+        margin-left: 20px;
+        margin-right: 40px;
+    }
+
+    nav {
+        width: 500px;
+        margin-right: 51px;
+    }
+
+    .hero-container img {
+        max-width: 750px;
+    }
+} 
+
+@media screen and (max-width:768px) {
+
+    html {
+        font-size: 10px;
+    }
+
+    .container {
+        max-width: 640px;
+    }
+
+
+
+    .hero-container img {
+        max-width: 640px;
+    }
+    .logo_img {
+        margin-left: 20px;
+        margin-right: 40px;
+    }
+
+    .header_icon {
+        margin-right: 50px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .header_number a{
+        margin-right: 0px;
+    }
+    .menu {
+        margin-left: 30px;
+        display: block;
+        font-size: 30px;
+        color: #3D4A39;
+        cursor: pointer;
+    }
+    #check:checked + nav {
+        display: block;
+
+    }
+
+    
+}
